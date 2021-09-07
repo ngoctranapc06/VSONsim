@@ -85,8 +85,8 @@ G4VPhysicalVolume *VSONDetectorConstruction::Construct()
 
   //------------------------------ NaI detectors
   G4VSolid *Naicounter_box = new G4Box("Naicounter_box", 17. * cm / 2, 5.5 * cm / 2, 5.5 * cm / 2);
-  G4LogicalVolume *Naicounter_log = new G4LogicalVolume(Naicounter_box, Plastic, "Nai_detector", 0, 0, 0);
-  //G4LogicalVolume *Naicounter_log = new G4LogicalVolume(Naicounter_box, NaI, "Nai_detector", 0, 0, 0);
+  //G4LogicalVolume *Naicounter_log = new G4LogicalVolume(Naicounter_box, Plastic, "Nai_detector", 0, 0, 0);
+  G4LogicalVolume *Naicounter_log = new G4LogicalVolume(Naicounter_box, NaI, "Nai_detector", 0, 0, 0);
   G4VPhysicalVolume *Naicounter_phys;
 
   G4RotationMatrix rm;
